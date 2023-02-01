@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>Positioning</title>
+<title>Cascading Style Sheets</title>
 <style type="text/css" media="all">
 body {
   background-color: gray;
@@ -15,6 +15,7 @@ body {
   color: white;
   font-weight: bold;
   font-family: Times New Roman;
+  z-index: 1;
 }
 div {
   padding: 20px;
@@ -30,6 +31,7 @@ div {
   text-align: center;
   border: 2px solid darkgreen;
   border-radius: 3px;
+  z-index: 1;
 }
 #right {
   position: absolute;
@@ -41,8 +43,10 @@ div {
   text-align: center;
   border: 2px solid red;
   border-radius: 3px;
+  z-index: 2;
 }
 #content {
+  position: absolute;
   border: 2px #e0e0e0 solid;
   border-radius: 5px;
   height: 600px;
@@ -53,6 +57,15 @@ div {
   font-size: 2em;
   text-align: center;
   background-color: #424242;
+  z-index: 3;
+}
+a,
+a:visited {
+  color: white;
+}
+a:hover,
+a:visited:hover {
+  color: gray;
 }
 </style>
 <script type="text/javascript">
@@ -62,8 +75,16 @@ div {
 
 <div id="main">
    <div id="left">Menu Here</div>
-   <div id="content">Text Goes Here</div>
-   <div id="right">Ads Here</div>
+   <div id="right">Right Panel Here</div>
+   <div id="content">
+
+<a href="index.html">Index</a>
+<h1>Cascading Style Sheets</h1>
+
+Text Goes Here
+
+   </div>
+
 </div>
 
 </body>

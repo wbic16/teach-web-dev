@@ -1,0 +1,228 @@
+<html>
+<head>
+  <title>Teach-Web-Dev | HTML</title>
+  <style type="text/css" media="all">
+table tr,
+table td,
+table th {
+  border-collapse: collapse;
+  border: 1px solid black;
+  border-radius: 2px;
+  padding: 8px;
+  margin: 0px;
+}
+table th {
+  background-color: gray;
+  color: white;
+}
+em {
+  font-weight: bold;
+  font-style: normal;
+}
+#PageTags {
+  float: left;
+}
+#TableTags {
+  float: left;
+}
+#ContentTags {
+  float: left;
+  clear: both;
+}
+  </style>
+  <script type="text/javascript">
+  </script>
+</head>
+<body>
+
+<a href="index.html">Index</a>
+<h1>HTML</h1>
+
+<h2>Syntax</h2>
+<p>
+HTML <i>tags</i> define <i>elements</i> that surround <i>markup text</i> and can have <i>attributes</i>.
+
+<ul>
+  <li><em>Tag</em>: A region of text formatted with angle brackets &lt; like so &gt;</li>
+  <li><em>Opening Tag</em>: The start of an HTML element</li>
+  <li><em>Closing Tag</em>: The end of an HTML element - shorthand is &lt;/Tag&gt;</li>
+  <li><em>Element</em>: A node within an HTML document, denoted by HTML opening and closing tags</li>
+  <li><em>Markup Text</em>: Either plain text or additional HTML markup</li>
+  <li><em>Attributes</em>: Key/Value pairs that supply the HTML engine with appropriate context for an element</li>
+</p>
+
+<div>
+  <div id="PageTags">
+
+<h2>Page Tags</h2>
+<p>
+  These tags help define the shape of your HTML document. You'll use them to denote major regions of the file.
+</p>
+
+<table cellspacing="0" cellpadding="0">
+<tr>
+  <th>Tag</th>
+  <th>Description</th>
+</tr>
+<tr>
+  <td>&lt;html&gt;</td>
+  <td>Opens an HTML document</td>
+</tr>
+<tr>
+  <td>&lt;head&gt;</td>
+  <td>Opens an HTML heading from within a &lt;html&gt; block</td>
+</tr>
+<tr>
+  <td>&lt;style&gt;</td>
+  <td>Opens a CSS block (typically used within an HTML heading)</td>
+</tr>
+<tr>
+  <td>&lt;script&gt;</td>
+  <td>Allows you to link or embed scripts within an HTML document</td>
+</tr>
+<tr>
+  <td>&lt;link&gt;</td>
+  <td>Allows you to link CSS media to your HTML page</td>
+</tr>
+<tr>
+  <td>&lt;body&gt;</td>
+  <td>The main content area of an HTML page</td>
+</tr>
+<tr>
+  <td>&lt;h1&gt;<br />
+      &lt;h2&gt;<br />
+      &lt;h3&gt;<br />
+      &lt;h4&gt;<br />
+      &lt;h5&gt;<br />
+      &lt;h6&gt;
+  </td>
+  <td>Headings (Level 1 through 6)</td>
+</tr>
+</table>
+
+</div>
+<div id="TableTags">
+<h2>Table Tags</h2>
+<p>
+  These tags are used to format tables.
+</p>
+
+<table cellspacing="0" cellpadding="0">
+<tr>
+  <th>Tag</th>
+  <th>Description</th>
+</tr>
+<tr>
+  <td>&lt;table&gt;</td>
+  <td>Creates a new HTML table</td>
+</tr>
+<tr>
+  <td>&lt;tr&gt;</td>
+  <td>Table Row</td>
+</tr>
+<tr>
+  <td>&lt;th&gt;</td>
+  <td>Table Heading</td>
+</tr>
+<tr>
+  <td>&lt;td&gt;</td>
+  <td>Table Cell (Data)</td>
+</tr>
+</table>
+
+</div>
+</div> <!-- Page/Table Tags -->
+
+<div id="ContentTags">
+
+<h2>Content Tags</h2>
+<p>
+  These tags give you some basic text formatting capabilities.
+  Note that modern HTML prefers <a href="css.html">CSS</a> over tags for formatting blocks of text.
+</p>
+
+<table cellspacing="0" cellpadding="0">
+<tr>
+  <th>Tag</th>
+  <th>Description</th>
+</tr>
+<tr>
+  <td>&lt;p&gt;</td>
+  <td>Paragraph block</td>
+</tr>
+<tr>
+  <td>&lt;br/&gt;</td>
+  <td>Line <em>Br</em>eak</td>
+</tr>
+<tr>
+  <td>&lt;img&gt;</td>
+  <td><em>Im</em>a<em>g</em>e tag - embeds a .png, .jpg, .gif, etc. inline with your text<br />
+      Note: You can also place images as backgrounds via CSS.</td>
+</tr>
+<tr>
+  <td>&lt;!-- --&gt;</td>
+  <td>Comment - not visible on the page, but available in your editor</td>
+</tr>
+<tr>
+  <td>&lt;hr&gt;</td>
+  <td><em>H</em>orizontal <em>R</em>ule - separate a region of text</td>
+</tr>
+<tr>
+  <td>&lt;div&gt;</td>
+  <td><em>Div</em>ision of text - used to block text that should produce a content break afterwards</td>
+</tr>
+<tr>
+  <td>&lt;span&gt;</td>
+  <td>Formats text inline, typically within a <em>span</em> of another content block.</td>
+</tr>
+<tr>
+  <td>&lt;a&gt;</td>
+  <td><a id="anchor" href="#anchor"><em>A</em>nchor Tag (Link)</a></td>
+</tr>
+<tr>
+  <td>&lt;em&gt;</td>
+  <td><em>Em</em>phasized point within a block of text</td>
+</tr>
+<tr>
+  <td>&lt;ul&gt; or &lt;ol&gt;</td>
+  <td>Unordered and Ordered Lists</td>
+</tr>
+<tr>
+  <td>&lt;b&gt; or &lt;strong&gt;</td>
+  <td><b>BOLD Text</b></td>
+</tr>
+<tr>
+  <td>&lt;i&gt;</td>
+  <td><i>Italic Text</i></td>
+</tr>
+<tr>
+  <td>&lt;u&gt;</td>
+  <td><u>Underlined Text</u></td>
+</tr>
+<tr>
+  <td>&lt;pre&gt;</td>
+  <td>
+<pre>
+     Text can be formatted exactly
+     ^                ^
+     typically a fixed-width font is used as well  
+
+     This is most-useful for embedding source code listings within HTML pages.
+</pre>
+  </td>
+</tr>
+<tr>
+  <td>&lt;q&gt;</td>
+  <td>Automatically puts your <q>Quoted text</q> in quotes
+</td>
+</tr>
+<tr>
+  <td>&lt;blockquote&gt;</td>
+  <td><blockquote>A larger quotation that is indented by default</blockquote>
+</td>
+</tr>
+</table>
+</div> <!-- Content Tags -->
+
+</body>
+</html>

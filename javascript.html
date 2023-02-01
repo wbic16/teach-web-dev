@@ -1,0 +1,62 @@
+<html>
+<head>
+<title>Teach-Web-Dev | JavaScript</title>
+<style type="text/css" media="all">
+</style>
+<script type="text/javascript">
+var message = "hi";
+function test(text) {
+  alert(text);
+}
+
+function test2() {
+  var second = document.getElementById("custom").value;
+  test(second);
+}
+
+function writer() {
+  var output = document.getElementById("output");
+  var custom = document.getElementById("custom");
+  output.innerHTML += custom.value + "<br />";
+}
+</script>
+</head>
+<body>
+
+<a href="index.html">Index</a>
+<h1>JavaScript</h1>
+
+<p>Clicking this button will display a dialog prompt with 'hi'.
+<input type="button" onclick="test(message);" value="Test 1" />
+</p>
+
+<h2>Functions</h2>
+<p>
+Define a new function using the <strong>function</strong> keyword.
+</p>
+
+<h2>Variables</h2>
+<p>
+Define a new variable using the <strong>var</strong> keyword.
+JavaScript favors flexibility - you do not need to declare the variable's data type.
+</p>
+
+<h2>Document Object Model</h2>
+<p>
+You can access HTML elements using IDs. The `document.getElementById` built-in function is especially helpful.
+</p>
+
+<h2>Grabbing Input</h2>
+<p>
+<input type="text" id="custom" size="10" maxlength="20" value="Wee!" />
+<input type="button" onclick="test2();" value="Test 2" />
+</p>
+
+<h2>Writing to the Page</h2>
+<p>
+<input type="button" onclick="writer();" value="Write Line Above to Output" />
+<div id="output">...</div>
+</p>
+
+</body>
+</html>
