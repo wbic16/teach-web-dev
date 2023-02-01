@@ -1,0 +1,70 @@
+<html>
+<head>
+<title>Positioning</title>
+<style type="text/css" media="all">
+body {
+  background-color: gray;
+}
+#main {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 20px;
+  background: darkblue;
+  color: white;
+  font-weight: bold;
+  font-family: Times New Roman;
+}
+div {
+  padding: 20px;
+}
+#left {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 200px;
+  height: 500px;
+  background-color: green;
+  font-family: Arial;
+  text-align: center;
+  border: 2px solid darkgreen;
+  border-radius: 3px;
+}
+#right {
+  position: absolute;
+  right: 15px;
+  top: 0px;
+  width: 800px;
+  height: 2000px;
+  background-color: purple;
+  text-align: center;
+  border: 2px solid red;
+  border-radius: 3px;
+}
+#content {
+  border: 2px #e0e0e0 solid;
+  border-radius: 5px;
+  height: 600px;
+  width: 600px;
+  margin-left: 300px;
+  margin-top: 40px;
+  padding: 10px;
+  font-size: 2em;
+  text-align: center;
+  background-color: #424242;
+}
+</style>
+<script type="text/javascript">
+</script>
+</head>
+<body>
+
+<div id="main">
+   <div id="left">Menu Here</div>
+   <div id="content">Text Goes Here</div>
+   <div id="right">Ads Here</div>
+</div>
+
+</body>
+</html>
